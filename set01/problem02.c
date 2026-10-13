@@ -11,11 +11,15 @@ int add(int a, int b)
 {
     return a+b;
 }
+void output(int a, int b, int sum)
+{
+    printf("OUTPUT:\n%d + %d = %d\n",a,b,sum);
+}
 int main()
 {
     int a,b,sum;
     input(&a,&b);
     sum=add(a,b);
-    printf("OUTPUT:\n%d + %d = %d\n",a,b,sum);
+    output(a, b, sum);
     return 0;
 }
